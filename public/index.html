@@ -27,8 +27,26 @@
     <title>React App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBbYjZBfxOBX2ay6jTpN9dCw0PXJ4e1rQ4",
+        authDomain: "manbocash-7aa7e.firebaseapp.com",
+        databaseURL: "https://manbocash-7aa7e.firebaseio.com",
+        projectId: "manbocash-7aa7e",
+        storageBucket: "manbocash-7aa7e.appspot.com",
+        messagingSenderId: "387864702922",
+        appId: "1:387864702922:web:04ab97e7a54b1807"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +57,9 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+    
   </body>
 </html>
