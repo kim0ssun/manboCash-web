@@ -5,16 +5,19 @@ export default props => {
   const [data, setData] = useState('');
 
   useEffect(() => {
-    axios.get('http://issuev3apitest.m2i.kr:9999/serviceapi.asmx/ServiceCouponList?CODE=1230&PASS=manbo&DOCCODE=1230000')
+  
+    axios.get(`http://issuev3apitest.m2i.kr:9999//serviceapi.asmx/ServiceCouponList?CODE=1230&PASS=manbo&DOCCODE=1230000`)
       .then(res =>{
-        setData(res);
+        console.log(res);
+        // setData(res);
       })
       .catch(err => console.log(err))
-  }, [])
+  }, []);
+
   return (
     <Fragment>
       <h1>Coupon Page</h1>
-      <p>{data}</p>
+      <p>{}</p>
     </Fragment>
   )
 }
