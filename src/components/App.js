@@ -7,9 +7,13 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" render={() => <h1>Home Page</h1>} />
-        <Route path="/coupon" component={Coupon} />
-        <Route render={() => <NotFound />} />
+        <Route exact path="/" render={() => <h1>Home got them Page</h1>} />
+        <Route path="/coupon">
+          <Coupon />
+        </Route>
+        <Route>
+          <NotFound />
+        </Route>
       </Switch>
     </Router>
   );
